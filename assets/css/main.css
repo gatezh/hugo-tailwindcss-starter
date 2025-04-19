@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@source "hugo_stats.json";
+/*
+Tailwind CSS respects .gitignore files. This means that if hugo_stats.json is listed in your .gitignore file, Tailwind CSS will ignore it. To make hugo_stats.json available to Tailwind CSS you must explicitly source it.
+https://gohugo.io/functions/css/tailwindcss/
+*/
