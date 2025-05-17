@@ -1,0 +1,12 @@
+{
+  "name": "hugo-tailwindcss-starter",
+  "pages_build_output_dir": "public",
+  "compatibility_date": "2025-04-14",
+  /**
+   * Environment Variables
+   * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
+   **/
+  "vars": {
+    "HUGO_VERSION": "0.147.3"
+  }
+}
