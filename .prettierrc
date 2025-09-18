@@ -1,5 +1,12 @@
 {
+  "plugins": ["prettier-plugin-go-template", "prettier-plugin-tailwindcss"],
   "overrides": [
+        {
+      "files": ["*.html"],
+      "options": {
+        "parser": "go-template"
+      }
+    },
     {
       "files": "*.jsonc",
       "options": {
@@ -7,6 +14,5 @@
         "trailingComma": "none"
       }
     }
-  ],
-  "plugins": ["prettier-plugin-tailwindcss"]
+  ]
 }
