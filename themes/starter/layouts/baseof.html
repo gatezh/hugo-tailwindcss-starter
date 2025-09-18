@@ -6,6 +6,9 @@
 <body>
   <header>
     {{ partial "header.html" . }}
+    {{ with (templates.Defer (dict "key" "global")) }}
+      {{ partial "css.html" . }}
+    {{ end }}
   </header>
   <main>
     {{ block "main" . }}{{ end }}
