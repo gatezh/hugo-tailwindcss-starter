@@ -9,7 +9,7 @@ ARG BUN_VERSION=1.2.19
 
 # ℹ️ HUGO_VERSION build environment variable is set in Cloudflare Worker settings
 # ⚠️ Remember to update Cloudflare build variables when making changes here
-ARG HUGO_VERSION=0.148.2
+ARG HUGO_VERSION=0.147.3
 
 # Install bun (musl build for Alpine)
 RUN wget -q https://github.com/oven-sh/bun/releases/download/bun-v${BUN_VERSION}/bun-linux-x64-musl.zip && \
