@@ -1,23 +1,8 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/marcosgomesneto/bun-devcontainers/tree/main/src/basic-bun
 {
-  "name": "bankand.me",
+  "name": "hugo-tailwindcss-starter",
   "dockerFile": "Dockerfile",
-  // Features to add to the dev container. More info: https://containers.dev/features.
-  "features": {
-    "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers/features/hugo:1": {
-      // ℹ️ HUGO_VERSION build environment variable is set in Cloudflare Worker settings
-      // ⚠️ Remember to update Cloudflare build variables when making changes here
-      "version": "0.148.2",
-      "extended": true
-    },
-    "ghcr.io/prulloac/devcontainer-features/bun:1": {
-      // ℹ️ BUN_VERSION build environment variable is set in Cloudflare Worker settings
-      // ⚠️ Remember to update Cloudflare build variables when making changes here
-      "version": "1.2.19"
-    }
-  },
   // Configure tool-specific properties.
   "customizations": {
     // Configure properties specific to VS Code.
