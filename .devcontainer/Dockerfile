@@ -4,7 +4,7 @@ FROM alpine:3.22
 RUN apk add --no-cache git gcompat
 
 ARG BUN_VERSION=1.3.2
-ARG HUGO_VERSION=152.2
+ARG HUGO_VERSION=0.152.2
 
 # Install bun (musl build for Alpine)
 RUN wget -q https://github.com/oven-sh/bun/releases/download/bun-v${BUN_VERSION}/bun-linux-x64-musl.zip && \
