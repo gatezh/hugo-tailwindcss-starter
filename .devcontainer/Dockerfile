@@ -3,13 +3,8 @@ FROM alpine:3.22
 # Install git and glibc compatibility (required for Hugo)
 RUN apk add --no-cache git gcompat
 
-# ℹ️ BUN_VERSION build environment variable is set in Cloudflare Worker settings
-# ⚠️ Remember to update Cloudflare build variables when making changes here
-ARG BUN_VERSION=1.2.19
-
-# ℹ️ HUGO_VERSION build environment variable is set in Cloudflare Worker settings
-# ⚠️ Remember to update Cloudflare build variables when making changes here
-ARG HUGO_VERSION=0.147.3
+ARG BUN_VERSION=1.3.2
+ARG HUGO_VERSION=152.2
 
 # Install bun (musl build for Alpine)
 RUN wget -q https://github.com/oven-sh/bun/releases/download/bun-v${BUN_VERSION}/bun-linux-x64-musl.zip && \
