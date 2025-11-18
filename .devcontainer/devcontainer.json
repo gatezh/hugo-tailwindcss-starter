@@ -2,7 +2,7 @@
 // README at: https://github.com/marcosgomesneto/bun-devcontainers/tree/main/src/basic-bun
 {
   "name": "hugo-tailwindcss-starter",
-  "dockerFile": "Dockerfile",
+  "image": "ghcr.io/gatezh/devcontainer-hugo-bun:latest",
   // Configure tool-specific properties.
   "customizations": {
     // Configure properties specific to VS Code.
