@@ -1,17 +1,23 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/marcosgomesneto/bun-devcontainers/tree/main/src/basic-bun
 {
   "name": "hugo-tailwindcss-starter",
-  "dockerFile": "Dockerfile",
-  // Configure tool-specific properties.
+  "image": "ghcr.io/gatezh/devcontainer-hugo-bun:latest",
+  "runArgs": [
+    "--hostname=hugo-tailwindcss-starter"
+  ],
   "customizations": {
-    // Configure properties specific to VS Code.
     "vscode": {
-      // Add the IDs of extensions you want installed when the container is created.
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "extensions.ignoreRecommendations": true
+      },
       "extensions": [
+        // **Claude Code**
+        "anthropic.claude-code",
+
         // **Bun**
         "oven.bun-vscode",
 
+        // **Prettier**
         // Prettier - Code Formatter
         "esbenp.prettier-vscode",
 
@@ -30,6 +36,5 @@
         "kaellarkin.hugo-shortcode-syntax"
       ]
     }
-  },
-  "postCreateCommand": "bash -lc 'ln -sf \"$(command -v bun)\" /usr/local/bin/node'"
+  }
 }
