@@ -4,6 +4,10 @@
   "runArgs": [
     "--hostname=hugo-tailwindcss-starter"
   ],
+  // Keep node_modules out of a host machine
+  "mounts": [
+    "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+  ],
   "customizations": {
     "vscode": {
       "settings": {
