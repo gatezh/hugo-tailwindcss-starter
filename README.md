@@ -27,3 +27,19 @@ hugo server --appendPort=false --baseURL / --bind 0.0.0.0
 - `--baseURL /`: Sets the base URL to root. This ensures all asset paths work correctly with Codespaces' port forwarding proxy, regardless of the forwarded URL structure.
 
 - `--bind 0.0.0.0`: Binds the server to all network interfaces instead of just localhost. This is necessary because Codespaces needs to forward the port from the container to the external URL, and binding to 0.0.0.0 allows external connections to reach the server.
+
+## Creating Content
+
+### Creating a New Post
+
+To create a new post using the posts archetype (branch bundle with images folder), run:
+
+```bash
+hugo new content/posts/my-post-name
+```
+
+This will create a directory structure at `content/posts/my-post-name/` with:
+- `index.md` - The main post content file
+- `images/` - A folder for storing post-specific images
+
+The branch bundle structure allows you to keep all post assets (images, files, etc.) organized alongside the post content.
