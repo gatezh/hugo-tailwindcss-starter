@@ -8,8 +8,8 @@ This starter is based on [the official Hugo documentation guide](https://gohugo.
 Install npm dependencies and start hugo server
 
 ```
-npm install
-npm run dev
+bun install
+bun run dev
 ```
 
 ### Running Hugo in GitHub Codespaces
